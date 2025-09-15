@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <h1>Asmit</h1>
+            </div>
+            <nav class="navLinks">
+                <a href="#about" >About</a>
+                <a href="#skill" >Skills</a>
+                <a href="#project" >Projects</a>
+                <a href="#" >Contact</a>
+            </nav>
+            <div class="hamburger">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <script>
+                const hamburger = document.querySelector(".hamburger")
+                const link= document.querySelector(".navLinks")
+                hamburger.addEventListener("click",()=>{
+                    link.classList.toggle("active")
+                })
+            </script>
+        </div>
+        <div class="section">
+            <div class="content">
+                <div class="name">
+                    <p class="p">Hi I am</p>
+                    <h1 class="a">Asmit</h1>
+                    <h2 class="h">Full Stack Developer</h2>
+                </div>
+                <div class="description">
+                    <p>Hi, I’m Asmit. I’m interested in technology and learning full-stack development. I like creating useful and easy-to-use applications.
+                        I also enjoy trying out new coding ideas, designing simple interfaces, and solving problems with technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="aboutSection">
+            <div class="about">
+                <div class="aboutImage">
+                    <img src="https://i.pinimg.com/736x/b4/07/3a/b4073ae822c46bc169e18a42f49bba08.jpg" alt="Profile Picture">
+                </div>
+                <div class="aboutContent">
+                    
+                    <h2>About Me</h2>
+                    <h1>Passionate Full-Stack Developer </h1>
+                    <p>
+                        I'm <strong>Asmit</strong>, a passionate <b>Full-Stack Developer</b> who loves 
+                        crafting responsive web applications and solving real-world problems with clean, efficient code.
+                        I enjoy learning new technologies, experimenting with coding ideas, and improving my problem-solving skills.  
+                        My focus is on creating clean, responsive designs and efficient solutions that can make a real impact.   
+                    </p>
+                    <button class="btn">Connect With Me</button>
+
+                    <div class="workExp">
+                        <h2>Work Experience</h2>
+                        <p>Hands-on practice in web development and modern technologies:</p>
+                        <div class="tags">
+                            <span>Webpages</span>
+                            <span>Frontend</span>
+                            <span>Backend</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="project" class="projects">
+            <h1>Projects</h1>
+            <div class="cards">
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="./Assets/guess.png">
+                    </div>
+                    <div class="cardContent">
+                        <h3>Number Guess Game</h3>
+                        <p>Guess the hidden number between 1 and 100. After each guess, you’ll be told if the secret number is higher or lower. Keep guessing until you find it!</p>
+                    </div>  
+                    <a href="http://127.0.0.1:5500/Assignment/Js_Assignment/Assignment_1/Number%20guess/index.html"><div class="cardBtn">View Project</div></a>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="./Assets/login.png">
+                    </div>
+                    <div class="cardContent">
+                        <h3>Login Page</h3>
+                        <span>This Login Page serves as the entrance to your personalized experience. By entering your credentials, you unlock access to the application’s features while ensuring your account stays protected.</span>
+                    </div>
+                    <a href="http://127.0.0.1:5500/JOT-W/14/Login/login.html"><div class="cardBtn">View Project</div></a>
+                </div>
+                <div class="card">
+                    <div class="cardImage">
+                        <img src="./Assets/task.png">
+                    </div>
+                    <div class="cardContent">
+                        <h3>Rydixo</h3>
+                        <span>Radixo is a modern and user-friendly cab booking webpage designed to make travel convenient and stress-free. Users can quickly search for available rides, book cabs, and manage their trips with just a few clicks.</span>
+                    </div>
+                    <a href="http://127.0.0.1:5500/JOT-W/12/assign.html"><div class="cardBtn">View Project</div></a>
+                </div>
+            </div>      
+        </div>
+
+        <div id="skill" class="skills">
+            <h1>Skills</h1>
+            <div class="subsection">
+                <div class="skill">
+                    <img src="./Assets/js.png">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="./Assets/nodejs.png">
+                    <p>Nodejs</p>
+                </div>
+                <div class="skill">
+                    <img src="./Assets/express.png">
+                    <p>Express</p>
+                </div>
+                <div class="skill">
+                    <img src="./Assets/mongodb.svg">
+                    <p>Mongo Db</p>
+                </div>
+                <div class="skill">
+                    <img src="./Assets/react.svg">
+                    <p>React</p>
+                </div>
+                <div class="skill">
+                    <img src="./Assets/python.svg">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="./Assets/html.svg">
+                    <p>Html</p>
+                </div>
+                <div class="skill">
+                    <img src="./Assets/css.svg">
+                    <p>Css</p>
+                </div>     
+            </div>
+        </div>
+
+        <section id="contact" class="contactSection">
+            <section id="contact" class="contactContainer">
+                <div class="contactContent">
+                    <h1>Contact Me</h1>
+                    <p>Interested in working together or just want to say hi? Feel free to reach out!</p>
+                    <div class="contactInfo">
+                        <div class="InfoOption">
+                            <div class="icon">
+                                <img src="./Assets/mail_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
+                            </div>
+                            <div class="infoText">
+                                <p><strong>Email:</strong></p>
+                                <a href="mailto:youremail@example.com">asmitprajapati0122@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="InfoOption">
+                            <div class="icon">
+                                <img src="./Assets/phone_24dp_1F1F1F.svg">
+                            </div>
+                            <div class="infoText">
+                                <p><strong>Phone:</strong> </p>
+                                <p>+91 8607828340</p>
+                            </div>
+                        </div>
+                        <div class="InfoOption">
+                            <div class="icon">
+                                <img src="./Assets/location_on_24dp_1F1F1F.svg">
+                            </div>
+                            <div class="infoText">
+                                <p><strong>Location:</strong></p>
+                                <p>Haryana, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socialMedia">
+                        <div class="mediaIcon">
+                            <a href="https://github.com/AsmitPrajapati" target="_blank"><img src="./Assets/github.svg"></a>
+                        </div>
+                        <div class="mediaIcon">
+                            <a href="https://www.linkedin.com/in/asmit-prajapati/" target="_blank"><img src="./Assets/linkedin.svg"></a>
+                        </div>
+                    </div>
+                </div> 
+                <form class="contactForm">
+                    <h1>Send a Message</h1>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
